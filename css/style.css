@@ -22,11 +22,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80rem;
+  width: 90rem;
   background: white;
   border: 1rem solid black;
   border-radius: 5rem;
-  margin: 20rem auto 0 auto;
+  margin: 10rem auto;
 }
 
 #toDoList {
@@ -91,8 +91,12 @@ body {
   transform: translateY(0.4rem);
 }
 
-.inputAndBtns button:first-child {
+.inputAndBtns button:nth-child(1), .inputAndBtns button:nth-child(2) {
   margin: 0 1rem;
+}
+
+.inputAndBtns button:nth-child(2) {
+  margin-left: 0;
 }
 
 /* toDoTitle STYLING */
@@ -109,7 +113,7 @@ body {
 }
 
 /* search bar styling */
-.inputAndBtns button:hover{
+.inputAndBtns button:hover {
   animation: shaking 0.2s 0.05s;
 }
 
@@ -127,6 +131,7 @@ body {
   font-size: 2rem;
   padding: 1rem;
   margin: 1rem;
+  cursor: pointer;
 }
 
 #toDoList li:nth-child(even) {
@@ -137,4 +142,17 @@ body {
 
 .checkBox {
   margin-right: 1rem;
+}
+
+/* task editor */
+.taskEditor, #update {
+  font-size: 2rem;
+  font-family: 'Gabarito', Arial, Helvetica, sans-serif;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.taskEditor {
+  width: 80%;
 }
